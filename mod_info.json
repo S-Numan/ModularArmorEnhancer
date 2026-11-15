@@ -1,0 +1,25 @@
+{
+  "id": "SN_ModularArmorEnhancer",
+  "name": "Modular Armor Enhancer",
+  "author": "S-Numan",
+  "utility": true,
+  "version": "1.0.0",
+  "description": "Prevents explosions from bypassing applicable modular armor and prevents the modular armor from being treated as a separate target to shoot at.\nAdditionally adds a modular armor preview to the MK.1 to observe how damaged your modular armor is.",
+  "gameVersion": "0.98.5a-RC6",
+  "jars": [ "jars/ModularArmorEnhancer.jar" ],
+  "modPlugin": "mae.ModPlugin",
+  "dependencies": [
+    {
+      "id": "lw_lazylib",
+      "name": "LazyLib"
+    },
+    {
+      "id": "MagicLib",
+      "name": "MagicLib"
+    }
+  ],
+  # If any mod ID in this list is enabled, prevent the game from completing its loading process and explain why.
+  "magiclib_modConflicts": [
+    { "id": "OnslaughtMk1Enhanced", "reason": "These two mods implement the same functionality."}
+  ],
+}
